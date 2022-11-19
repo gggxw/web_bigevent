@@ -68,7 +68,7 @@ $(function() {
                 layer.msg('登陆成功');
                 // 把登录成功得到的token字符串，存储到localStorage中
                 localStorage.setItem('token', res.token);
-                location.href = '/index.html'
+                location.href = '/第四阶段/第四节 大事件/code/index.html'
             }
         })
     })
