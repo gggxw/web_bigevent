@@ -1,8 +1,10 @@
 // 每次调用ajax请求之前先调用这个函数，拿到我们给ajax提供的配置对象
 $.ajaxPrefilter(function(options) {
-    options.url = 'http://www.liulongbin.top:3007' + options.url
-        // console.log(options.url);
-        // 统一给有权限的接口，设置headers请求头
+    options.url = 'http://big-event-api-t.itheima.net' + options.url
+        // options.url = 'http://www.liulongbin.top:3007' + options.url
+
+    // console.log(options.url);
+    // 统一给有权限的接口，设置headers请求头
     if (options.url.indexOf('/my/') !== -1) {
         options.headers = {
             Authorization: localStorage.getItem('token') || ''

@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f2f3f5;
+    padding: 15px;
+}
+
+.layui-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#addCate,
+#editCate {
+    padding-top: 25px;
+    padding-right: 25px;
+}
